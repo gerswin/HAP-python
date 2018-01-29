@@ -45,16 +45,16 @@ def get_bridge():
 
     #bridge.add_accessory(LightBulb("Luz",server=server_auth,device_id="F9-CB-E6-6D-F4-00"))
     #bridge.add_accessory(LightBulbDimmer("Luz",server=server_auth,device_id="F9-CB-E6-6D-F4-02"))
-
+    i = 2
     for device in devices:
-
+        i += 1
         if (device['service'] == "LIGHTBULB"):
             if(device['dimmer']):
-                bridge.add_accessory(LightBulbDimmer(device['name'],server=server_auth,device_id=device['device_id']))
+                bridge.add_accessory(LightBulbDimmer(device['name'],aid=i ,server=server_auth,device_id=device['device_id']))
             else:
-                 bridge.add_accessory(LightBulb(device['name'],server=server_auth,device_id=device['device_id']))
+                 bridge.add_accessory(LightBulb(device['name'],aid=i ,server=server_auth,device_id=device['device_id']))
         elif (device['service'] == "GARAGE_DOOR_OPENER"):
-            bridge.add_accessory(GarageDoor(device['name'],server=server_auth,device_id=device['device_id']))
+            bridge.add_accessory(GarageDoor(device['name'],aid=i ,server=server_auth,device_id=device['device_id']))
         else:
             pass
 

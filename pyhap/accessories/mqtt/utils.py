@@ -35,7 +35,7 @@ class Utils(object):
         elif (type(value) == int):
             return value
         elif (int(value) > 1):
-            return value
+            return int(value)
         else:
             try:
                 data = value.decode()
