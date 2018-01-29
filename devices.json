@@ -1,0 +1,28 @@
+[
+
+    {
+        "service": "LIGHTBULB",
+        "dimmer": false,
+        "name": "Luz Cocina",
+        "manufacturer": "Generic",
+        "model": "HMS100T",
+        "device_id": "F9-CB-E6-00-F4-00"
+    },
+    {
+        "service": "LIGHTBULB",
+        "dimmer": true,
+        "name": "Luz de La Sala",
+        "manufacturer": "Generic",
+        "model": "HMS100T",
+        "device_id": "F9-CB-E6-6D-00-01"
+
+    },
+    {
+        "service": "GARAGE_DOOR_OPENER",
+        "name": "Garaje de La Sala",
+        "manufacturer": "Generic",
+        "model": "HMS100T",
+        "device_id": "F9-CB-00-6D-F4-02"
+
+    }
+]

@@ -15,7 +15,6 @@ from pyhap.accessories.mqtt.LightBulbDimmer import LightBulbDimmer
 from pyhap.accessories.mqtt.LightBulb import LightBulb
 from pyhap.accessories.mqtt.GarageDoor import GarageDoor
 
-from pyhap.accessories.TemperatureMQTT import TemperatureMQTT
 from pyhap.accessory import Bridge
 from pyhap.accessory_driver import AccessoryDriver
 import json
