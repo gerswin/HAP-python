@@ -4,7 +4,7 @@ setup(
     name="HAP-python",
     description="HomeKit Accessory Protocol implementation in python3",
     author="Ivan Kalchev",
-    version="1.0.6",
+    version="1.1",
     url="https://github.com/ikalchev/HAP-python.git",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
@@ -27,6 +27,12 @@ setup(
         "zeroconf",
         "curve25519-donna"
     ],
+    extras_require={
+        "dev": [
+            "pytest",
+            "tox",
+        ],
+    },
     package_data={
         "pyhap": ["resources/*"],
     }
